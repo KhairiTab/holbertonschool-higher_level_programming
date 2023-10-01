@@ -4,4 +4,7 @@ for i in range(10):
         if i > j or i == j:
             continue
         else:
-            print(f"{i}{j}")
+            if i == 8 and j == 9:
+                print(f"{i}{j}")
+            else:
+                print(f"{i}{j}", end=", ")
