@@ -2,3 +2,4 @@
 uppercase = __import__('8-uppercase').uppercase
 
 uppercase("best")
+uppercase("hello")
