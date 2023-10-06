@@ -12,7 +12,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
         y.remove[2:]
         tuple_b = tuple(y)
     else:
-        for i in range(len(list_a)):
-            list_a[i] += tuple_b[i]
-    tuple_a = tuple(list_a)
-    return(tuple_a)
+        return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
+tuple_a = (1, 89)
+tuple_b = (88, 11)
+new_tuple = add_tuple(tuple_a, tuple_b)
+print(new_tuple)
