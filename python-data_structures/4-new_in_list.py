@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
+
 def new_in_list(my_list, idx, element):
     if idx < 0 or idx > (len(my_list) - 1):
-        return(my_list)
-    
-    list_b = [x for x in my_list]
-    list_b[idx] = element
-    return(list_b)
+        return (my_list)
+
+    aux = [x for x in my_list]
+    aux[idx] = element
+    return (aux)
