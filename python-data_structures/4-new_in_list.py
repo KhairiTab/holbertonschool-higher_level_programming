@@ -6,6 +6,6 @@ def new_in_list(my_list, idx, element):
     elif idx >= (len(my_list)-1):
         return my_list
     else:
-        for i in my_list:
+        for i in len(my_list)-1:
             list_b[i] = my_list[i]   
     list_b[idx] = element
