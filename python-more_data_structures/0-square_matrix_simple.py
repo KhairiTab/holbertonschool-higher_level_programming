@@ -6,4 +6,4 @@ def square_matrix_simple(matrix=[]):
     for i in range(row):
         for j in range(col):
             my_list[i][j] = matrix[i][j] * matrix[i][j]
-    return(my_list)
+    return my_list
