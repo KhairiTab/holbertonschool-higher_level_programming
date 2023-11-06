@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""Contains classes for working with Polygons.
+"""
+
+
 class Base:
     """Represents the base class for all polygon objects.
     """
