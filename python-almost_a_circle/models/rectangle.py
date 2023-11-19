@@ -1,4 +1,6 @@
-from base import Base
+from models.base import Base
+
+
 class Rectangle(Base):
     """Represents a polygon with 4 perpendicular and
     two pairs of equal sides.
@@ -19,7 +21,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        
+
     @property
     def width(self):
         """Gets or sets the width of this rectangle.
@@ -43,3 +45,4 @@ class Rectangle(Base):
         """Gets or sets the vertical position of this rectangle.
         """
         return self.__y
+    
