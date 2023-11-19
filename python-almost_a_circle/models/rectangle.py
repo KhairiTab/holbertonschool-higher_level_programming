@@ -1,50 +1,43 @@
 #!/usr/bin/python3
 """Defines a rectangle class."""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
-    """Represents a polygon with 4 perpendicular and
-    two pairs of equal sides.
-    """
+    """Represent a rectangle."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initializes a new rectangle object.
+        """Initialize a new Rectangle.
 
         Args:
-            width (int): The width of this rectangle.
-            height (int): The height of this rectangle.
-            x (int): The horizontal position of this rectangle.
-            y (int): The vertical position of this rectangle.
-            id (int): The id of this rectangle.
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+            x (int): The x coordinate of the new Rectangle.
+            y (int): The y coordinate of the new Rectangle.
+            id (int): The identity of the new Rectangle.
         """
-        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     @property
     def width(self):
-        """Gets or sets the width of this rectangle.
-        """
-        return self.height
+        """Set/get the width of the Rectangle."""
+        return self.__width
 
     @property
     def height(self):
-        """Gets or sets the height of this rectangle.
-        """
-        return self.height
+        """Set/get the height of the Rectangle."""
+        return self.__height
 
     @property
     def x(self):
-        """Gets or sets the horizontal position of this rectangle.
-        """
+        """Set/get the x coordinate of the Rectangle."""
         return self.__x
 
     @property
     def y(self):
-        """Gets or sets the vertical position of this rectangle.
-        """
+        """Set/get the y coordinate of the Rectangle."""
         return self.__y
-    
