@@ -26,13 +26,13 @@ class Rectangle(Base):
     def width(self):
         """Gets or sets the width of this rectangle.
         """
-        return self.__width
+        return self.height
 
     @property
     def height(self):
         """Gets or sets the height of this rectangle.
         """
-        return self.__height
+        return self.height
 
     @property
     def x(self):
