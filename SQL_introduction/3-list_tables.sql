@@ -1,0 +1,2 @@
+-- list_tables
+USE $DATABASE_NAME; SHOW TABLES;
