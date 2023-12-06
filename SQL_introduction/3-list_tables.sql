@@ -1,2 +1,2 @@
 -- list_tables
-USE $DATABASE_NAME; SHOW TABLES;
+USE $mysql; SHOW TABLES;
